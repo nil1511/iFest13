@@ -1,0 +1,27 @@
+@font-face{
+	font-family: letter; 
+	src: url('../fonts/LetterGothicStd.otf') format('opentype');
+}
+body{
+	background: url('../images/mainbg.jpg') no-repeat 100% 100%/ 100% 100%;
+}
+#title{
+	font-family: letter;
+	text-align: center;
+}
+#menuul{
+	text-align: center;
+}
+#menuul li{
+	font-family: 'Yanone Kaffeesatz';
+	font-size: 16pt;
+	display: inline-block;
+	padding: 5px;
+	background: url('../images/menubg.png');
+	color: #fff;
+	cursor: pointer;
+}
+#menuul li:hover{
+	transition: all 0.2s ease-out;
+	padding: 5px 10px;
+}
