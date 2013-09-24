@@ -87,3 +87,52 @@ html{
 	width: 80%;
 	margin: 0 10%;
 }
+#coordinators{
+	background: url('../images/texture.jpg') repeat;
+}
+#core{
+		background: url('../images/ifest.png') no-repeat 50% 50%/ 80% 80%;
+}
+#coordinators div{
+	height: 100%;
+}
+.contele{
+	display: inline-block;
+	width: 33%;
+}
+#c1{
+	background: url('../images/kitten01.png') no-repeat 100% 100%/100% 100%;	
+	top: 2%;
+	left: 25%;
+}
+#c2{
+	background: url('../images/kitten02.png') no-repeat 100% 100%/100% 100%;	
+	top: 30%;
+	left: 20%;
+}
+#c3{
+	background: url('../images/puppy01.png') no-repeat 100% 100%/100% 100%;	
+	top: 58%;
+	left: 25%;
+}
+#c4{
+	background: url('../images/kitten01.png') no-repeat 100% 100%/100% 100%;	
+	top: 2%;
+	right: 25%;
+}
+#c5{
+	background: url('../images/kitten02.png') no-repeat 100% 100%/100% 100%;	
+	top: 30%;
+	right: 20%;
+}
+#c6{
+	background: url('../images/puppy01.png') no-repeat 100% 100%/100% 100%;	
+	top: 58%;
+	right: 25%;
+}
+
+.contele div{
+	position: absolute;
+	width: 100px;
+	height: 100px !important;
+}
