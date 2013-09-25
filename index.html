@@ -8,6 +8,8 @@
 <link rel="icon" type="image/png" href="images/favicon.png">
 <script type="text/javascript" src="script/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="script/index.js"></script>
+<script type="text/javascript" src="script/jquery.slimscroll.min.js"></script>
+
 <body>
 <div id="header">
 	<h1 id="title">i.Fest 2013</h1>
@@ -113,18 +115,18 @@
 	</div>
 	<div id="registercontain" class="ccontainer">
 		<div id="register" class="view">
-			<div>
-				<form method="post">
-				<input type="text" placeholder="What is Your Name?" value="" name="name"><br>
-				<input type="radio" value="male" name="sex">Male<input type="radio" value="female" name="sex">Female<br>
-				<input type="text" placeholder="Institute/Organisation" value="" name="name"><br>
-				<input type="radio" value="nonieee" name="ieee">Non IEEE Member<input type="radio" value="ieee" name="ieee">IEEE Member<br>
-				<input type="text" placeholder="IEEE Membership Number" value="" name="name"><br>
-				<input type="text" placeholder="Postal Address" value="" name="name"><br>
-				<input type="text" placeholder="City" value="" name="name"><br>
-				<input type="text" placeholder="Pin" value="" name="name"><br>
-				<input type="text" placeholder="Phone no." value="" name="name"><br>
-				<input type="text" placeholder="Email" value="" name="name"><br>
+			<div style="width:100%;height: 100%;text-align:center;overflow-y:scroll">
+				<form method="post" id="regform">
+				<div class="dis"><input type="text" placeholder="What is Your Name?" value="" name="name"></div>
+				<div><input type="radio" value="male" name="sex">Male<input type="radio" value="female" name="sex">Female</div>
+				<div><input type="text" placeholder="Institute/Organisation" value="" name="name"></div>
+				<div><input type="radio" value="nonieee" name="ieee">Non IEEE Member<input type="radio" value="ieee" name="ieee">IEEE Member</div>
+				<div><input type="text" placeholder="IEEE Membership Number" value="" name="name"></div>
+				<div><input type="text" placeholder="Postal Address" value="" name="name"></div>
+				<div><input type="text" placeholder="City" value="" name="name"></div>
+				<div><input type="text" placeholder="Pin" value="" name="name"></div>
+				<div><input type="text" placeholder="Phone no." value="" name="name"></div>
+				<div><input type="text" placeholder="Email" value="" name="name"></div>
 				Events
 				</form>
 			</div>

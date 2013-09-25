@@ -37,5 +37,14 @@ $(function(){
 		}
 
 	});
+		$('.dis input').on('blur',function(e){
+		console.log(e.currentTarget,$('.dis input').val());
+		if($('.dis input').val()!=''){
+			var a=$('.dis').next().next('div');
+			$('.dis').removeClass('dis').addClass('diss');
+			a.addClass('dis');
+		}
+
+	})
 
 });
