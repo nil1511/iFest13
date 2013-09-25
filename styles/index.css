@@ -167,3 +167,18 @@ html{
 	text-align:center;
 	overflow-y:scroll;
 }
+#events{
+	text-align: center;
+}
+.event{
+	text-align: center;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	margin: 10px;
+	background: #fff;
+}
+#eventHolder{
+	position: relative;
+	top: 50%;
+}

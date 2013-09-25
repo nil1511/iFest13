@@ -37,6 +37,7 @@ $(function(){
 		}
 
 	});
+	$('#eventHolder').css('margin-top',-$('#eventHolder').height()/2+'px');
 		$('.dis input').on('blur',function(e){
 		console.log(e.currentTarget,$('.dis input').val());
 		if($('.dis input').val()!=''){
