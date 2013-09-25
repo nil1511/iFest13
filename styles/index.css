@@ -100,7 +100,7 @@ html{
 #core{
 		background: url('../images/ifest.png') no-repeat 50% 50%/ 80% 80%;
 }
-#coordinators div{
+#contacts,#core,#rcontacts,#lcontacts{
 	height: 100%;
 }
 .contele{
@@ -138,10 +138,10 @@ html{
 	right: 25%;
 }
 
-.contele div{
+#c1,#c2,#c3,#c4,#c5,#c6{
 	position: absolute;
 	width: 100px;
-	height: 100px !important;
+	height: 100px;
 }
 #register input{
 	border: 0;
@@ -181,4 +181,8 @@ html{
 #eventHolder{
 	position: relative;
 	top: 50%;
+}
+#c1 div,#c2 div,#c3 div,#c4 div,#c5 div,#c6 div{
+	background: url('../images/circle.png') no-repeat 0% 0%/100% auto;
+	height: 0px;
 }
