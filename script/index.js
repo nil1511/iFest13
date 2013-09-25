@@ -46,5 +46,7 @@ $(function(){
 		}
 
 	})
-
+		$('#regcontainer').slimScroll({
+			height:$('#regcontainer').height()+'px'
+		});
 });
