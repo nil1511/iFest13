@@ -36,7 +36,24 @@ $(function(){
 		}
 
 	});
-	
+
+	$(document).keyup(function(e){
+		console.log(e);
+		if($('.event div.opened')['length']){
+			$('.event div.opened').transition({
+			width:'120px',
+			height:'120px',
+			marginLeft:'0px',
+			marginTop:'0px'
+			},'700','easeInBack',
+    		function(){
+			 $('.event div.opened').removeClass('opened');	
+			});
+		}
+
+	});
+
+
 	$('.event div:not(.opened)').click(function(e){
 		if($(e.currentTarget).hasClass('opened'))
 			return;
@@ -49,7 +66,7 @@ $(function(){
 			height:h*0.75+'px',
 			marginLeft:ml+'px',
 			marginTop:mt+'px'
-			},'1000','easeOutBack',
+			},'700','easeOutBack',
     		function(){
 			 $(e.currentTarget).addClass('opened');
 		});
