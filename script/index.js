@@ -52,11 +52,13 @@ $(function(){
 		}
 
 	});
-
+	var eclick = false;
 
 	$('.event div:not(.opened)').click(function(e){
 		if($(e.currentTarget).hasClass('opened'))
 			return;
+		if(!eclick){
+			eclick=true;
 		var offset = $(e.currentTarget).offset();
 		var off=$('#events').offset();
 		var mt = off.top-offset.top;
@@ -69,7 +71,11 @@ $(function(){
 			},'700','easeOutBack',
     		function(){
 			 $(e.currentTarget).addClass('opened');
+			eclick=false;
 		});
+
+		}
+		
 	});
 
 	$('#c1,#c2,#c3,#c4,#c5,#c6').hover(function(e){
