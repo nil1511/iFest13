@@ -96,6 +96,12 @@ $(function(){
 	{ $('#eventHolder').css('margin-top',-$('#eventHolder').height()/2+'px');
 	}else{
 		$('#eventHolder').css('top','0px');
+
+	$('#eventHolder').slimScroll({
+		height:$('#events').height()+'px'
+	});
+	
+
 	}
 		
 
@@ -107,13 +113,12 @@ $(function(){
 	// 		a.addClass('dis');
 	// 	}
 	// });
+	
+
 	$('#aboutholder').slimScroll({
 		height:$('#about').height()+'px'
 	});
 
-	$('#eventHolder').slimScroll({
-		height:$('#events').height()+'px'
-	});
 	$('#home p').slimScroll({
 		height:$('#home').height()+'px'
 	});
