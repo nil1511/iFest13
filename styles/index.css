@@ -1,3 +1,4 @@
+/******FONTS *****/
 @font-face{
 	font-family: letter; 
 	src: url('../fonts/LetterGothicStd.otf') format('opentype');
@@ -16,7 +17,7 @@
 	font-family: tmhab; 
 	src: url('../fonts/ThrowMyHandsUpintheAirBold.ttf') format('truetype');
 }
-
+/******OVERALL *****/
 body{
 	height: 100%;
 	overflow: hidden;
@@ -25,6 +26,7 @@ body{
 html{
 	overflow: hidden;
 }
+/******HOME *****/
 #title{
 	font-family: Yanone Kaffeesatz;
 	text-align: center;
@@ -71,6 +73,9 @@ html{
 #home p{
 	padding: 2em;
 }
+
+
+/******ABOUT *****/
 #about{
 	text-align: center;
 }
@@ -84,20 +89,14 @@ html{
 	width: 40%;
 	padding: 10px;
 }
-#evetable,#sponsortable{
+/******SPONSORS *****/
+#sponsortable{
 	width: 100%;
 	text-align: center;
 	height: 100%;
 }
-#evetable td{
-	width: 20%;
-}
-#evetable td div{
-	background: #fff;
-	height: 80%;
-	width: 80%;
-	margin: 0 10%;
-}
+
+/******CO-ORDINATORS *****/
 #coordinators{
 	background: url('../images/texture.jpg') repeat;
 }
@@ -147,33 +146,6 @@ html{
 	width: 100px;
 	height: 100px;
 }
-/*#c1 div,#c2 div,#c3 div,#c4 div,#c5 div,#c6 div{
-	display: none;
-}*/
-#register input{
-	border: 0;
-	box-shadow: 0px 0px 10px 0px #95A5A6;
-	margin: 8px;
-	outline: 0;
-	padding: 5px 2px;	
-}
-#regform div{
-	/*display: none;*/
-}
-.dis,.diss{
-	display: block !important;
-}
-#register input:focus{
-	border: 1px solid #E67E22;
-	outline: 0;
-	box-shadow: 0px 0px 10px 1px #E67E22;
-}
-#regcontainer{
-	width:100%;
-	height: 100%;
-	text-align:center;
-	overflow-y:scroll;
-}
 .ccon{
 	background: url('../images/circle.png') no-repeat 0% 0%/100% auto;
 	height: 0px;
@@ -216,6 +188,43 @@ html{
 .telc:hover{
 	background: url('../images/tel.png') no-repeat 50% 50%/contain;
 }
+#coresocial{
+	position: absolute;
+	list-style-type: none;
+}
+
+/*#c1 div,#c2 div,#c3 div,#c4 div,#c5 div,#c6 div{
+	display: none;
+}*/
+
+/******REGISTER *****/
+#register input{
+	border: 0;
+	box-shadow: 0px 0px 10px 0px #95A5A6;
+	margin: 8px;
+	outline: 0;
+	padding: 5px 2px;	
+}
+#regform div{
+	/*display: none;*/
+}
+.dis,.diss{
+	display: block !important;
+}
+#register input:focus{
+	border: 1px solid #E67E22;
+	outline: 0;
+	box-shadow: 0px 0px 10px 1px #E67E22;
+}
+#regcontainer{
+	width:100%;
+	height: 100%;
+	text-align:center;
+	overflow-y:scroll;
+}
+
+
+/***** EVENTS *****/
 #events{
 	text-align: center;
 }
