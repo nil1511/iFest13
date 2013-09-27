@@ -10,33 +10,34 @@ $(function(){
 	$('#coordinatorscontain').css('left',5*w+'px');
 	$('#reachuscontain').css('left',6*w+'px');
 	$('#regcoming').width($('.view').width()).height($('.view').height());
+	// $('.view').css('background-size',$('.view').width()+'px '+$('.view').height()+'px');
 	$('#menuul li').click(function(e){
 		switch(e.currentTarget.innerHTML){
 			case "Home":
-				$(".ccontainer").animate({marginLeft:"0%"});
+				$(".ccontainer").transition({marginLeft:"0%"},'700','easeOutBack');
 				break;
 			case "About":
-				$(".ccontainer").animate({marginLeft:"-100%"});
+				$(".ccontainer").transition({marginLeft:"-100%"},'700','easeOutBack');
 				break;
 			case "Events":
-				$(".ccontainer").animate({marginLeft:"-200%"});
+				$(".ccontainer").transition({marginLeft:"-200%"},'700','easeOutBack');
 				break;
 			case "Register":
-				$(".ccontainer").animate({marginLeft:"-300%"});
+				$(".ccontainer").transition({marginLeft:"-300%"},'700','easeOutBack');
 				break;
 			case "Sponsor":
-				$(".ccontainer").animate({marginLeft:"-400%"});
+				$(".ccontainer").transition({marginLeft:"-400%"},'700','easeOutBack');
 				break;
 			case "Coordinators":
-				$(".ccontainer").animate({marginLeft:"-500%"});
+				$(".ccontainer").transition({marginLeft:"-500%"},'700','easeOutBack');
 				break;
 			case "Reach us":
-				$(".ccontainer").animate({marginLeft:"-600%"});
+				$(".ccontainer").transition({marginLeft:"-600%"},'700','easeOutBack');
 				break;
 		}
-
 	});
 
+	
 	$(document).keyup(function(e){
 		// console.log(e);
 		if($('.event div.opened')['length']){
@@ -78,13 +79,13 @@ $(function(){
 		
 	});
 
-	$('#c1,#c2,#c3,#c4,#c5,#c6').hover(function(e){
+	$('#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8').hover(function(e){
 			$('#'+e.currentTarget.id+' .ccon').show().animate({
 			height:'100px'
 			},'slow',function(){
 				$('#'+e.currentTarget.id+' .ccon div').fadeIn(200);
 			});
-	},function(e){
+		},function(e){
 			$('#'+e.currentTarget.id+' .ccon div').fadeOut(200);
 			$('#'+e.currentTarget.id+' .ccon').animate({
 			height:'0px'
@@ -97,23 +98,11 @@ $(function(){
 	}else{
 		$('#eventHolder').css('top','0px');
 
-	$('#eventHolder').slimScroll({
-		height:$('#events').height()+'px'
-	});
-	
-
+		$('#eventHolder').slimScroll({
+			height:$('#events').height()+'px'
+		});
 	}
-		
-
-	// $('.dis input').on('blur',function(e){
-	// 	console.log(e.currentTarget,$('.dis input').val());
-	// 	if($('.dis input').val()!=''){
-	// 		var a=$('.dis').next().next('div');
-	// 		$('.dis').removeClass('dis').addClass('diss');
-	// 		a.addClass('dis');
-	// 	}
-	// });
-	
+			
 
 	$('#aboutholder').slimScroll({
 		height:$('#about').height()+'px'
