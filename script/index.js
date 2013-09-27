@@ -37,10 +37,10 @@ $(function(){
 		}
 	});
 
-	
 	$(document).keyup(function(e){
 		// console.log(e);
 		if($('.event div.opened')['length']){
+			$('.eventcont').css('font-size','10px');
 			$('.event div.opened').transition({
 			width:'120px',
 			height:'120px',
@@ -55,7 +55,7 @@ $(function(){
 	});
 	var eclick = false;
 
-	$('.event div:not(.opened)').click(function(e){
+	$('.event div.eventdialog:not(.opened)').click(function(e){
 		if($(e.currentTarget).hasClass('opened'))
 			return;
 		if(!eclick){
@@ -72,11 +72,10 @@ $(function(){
 			},'700','easeOutBack',
     		function(){
 			 $(e.currentTarget).addClass('opened');
+			 $('.eventcont').css('font-size','20px');
 			eclick=false;
 		});
-
 		}
-		
 	});
 
 	$('#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8').hover(function(e){
@@ -90,7 +89,7 @@ $(function(){
 			$('#'+e.currentTarget.id+' .ccon').animate({
 			height:'0px'
 		},'slow',function(){
-			$('#'+e.currentTarget.id+' .ccon').hide();
+			$('#'+e.currentTarget.id+' .ccon div').hide();
 		});
 	},250);
 	if($('#eventHolder').outerHeight(true)<$('#events').height())
@@ -113,5 +112,9 @@ $(function(){
 	});
 	$('#regcontainer').slimScroll({
 		height:$('#regcontainer').height()+'px'
+	});
+	$('#mapcscroll').width($('#mapc').width());
+	$('#mapc').slimScroll({
+		height:$('#map').height()+'px'
 	});
 });
