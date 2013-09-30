@@ -2,7 +2,7 @@ $(function(){
 	var w=(window.innerWidth==null)?(document.documentElement.offsetWidth):window.innerWidth,h=(window.innerHeight==null)?(document.documentElement.offsetHeight):window.innerHeight;
 	$('#container').width(6*w);
 	$('.ccontainer').width(w);
-	// $('.view').width(w*0.92);
+	$('.view,#ccontainer,#container').height($('#home').height());
 	$('#aboutcontain').css('left',w+'px');
 	$('#eventscontain').css('left',2*w+'px');
 	$('#registercontain').css('left',3*w+'px');
@@ -94,10 +94,15 @@ $(function(){
 	},250);
 	if($('#eventHolder').outerHeight(true)<$('#events').height())
 	{ $('#eventHolder').css('margin-top',-$('#eventHolder').height()/2+'px');
+		$('#sponsorcontainer').css('margin-top',-$('#sponsorcontainer').height()/2+'px');
+		
 	}else{
 		$('#eventHolder').css('top','0px');
-
+		$('#sponsorcontainer').css('top','0px');
 		$('#eventHolder').slimScroll({
+			height:$('#events').height()+'px'
+		});
+		$('#sponsorcontainer').slimScroll({
 			height:$('#events').height()+'px'
 		});
 	}
